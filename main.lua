@@ -39,17 +39,15 @@ do -- auto farm
     
     
     spawn(function()
-        while wait() do
-            local max_ki = player.Status.MaxEnergy
+        while wait(.2) do
             local ki = player.Status.Energy
             local stat = next_farm()
             
-            while ki.Value < max_ki.Value/2 do
-                charge:InvokeServer(false)
-                wait()
+            if ki.Value < 10 then
+                if player.Character and player.Character:FindFirstChild('Humanoid') then
+                    player.Character.Humanoid.Health = 0
+                end
             end
-            
-            finish:FireServer()
             
             if stat == 1 then
                 combat:InvokeServer()
