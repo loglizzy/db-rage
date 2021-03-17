@@ -9,4 +9,4 @@ for i,v in pairs(requirements) do
     services[content.Name] = content.Function
 end
 
-return services --
+return services
