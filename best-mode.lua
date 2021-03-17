@@ -28,7 +28,7 @@ local function main()
                     l = {n, m, i}
                 end
             elseif s({v[2],v[3],v[4],v[5]}) then
-                l = {n, m, i}
+                l = {n, m, i} --
             end
         end
     end
