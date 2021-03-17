@@ -12,8 +12,4 @@ local requirements = {
     end
 end)
 
-if succcess then
-    return requirements
-else
-    return err
-end
+return requirements
