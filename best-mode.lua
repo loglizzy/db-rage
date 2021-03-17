@@ -1,10 +1,11 @@
 local k = require(game.ReplicatedStorage["_replicationFolder"].SkillRequirements).Modes
 local c = game.Players.LocalPlayer.Stats
-c = {c.Attack.Value, c.Ki.Value,  c.Agility.Value, c.ZenkaiBoost.Value}
 local d = require(game.ReplicatedStorage["_replicationFolder"].ModeMultipliers)
 
 local function s(t)
     local o = 0
+    local c = {c.Attack.Value, c.Ki.Value,  c.Agility.Value, c.ZenkaiBoost.Value}
+    
     for i,v in pairs(t) do
         if v <= c[i] then
             o = o + 1
@@ -16,6 +17,7 @@ end
 
 local function main()
     local l
+    
     for i,v in pairs(k) do
         local n = v[1]
         local m = d[n]
