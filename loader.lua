@@ -12,4 +12,4 @@ do -- services loader
     end
 end
 
-return requirements
+return services
