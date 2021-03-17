@@ -33,4 +33,4 @@ local function main()
     return l
 end
 
-return main
+return {Name = 'best mode', Function = main}
