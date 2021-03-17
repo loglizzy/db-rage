@@ -25,10 +25,10 @@ local function main()
         if n and m then
             if l then
                 if l[2] < m and s({v[2],v[3],v[4],v[5]}) then
-                    l = {n, i}
+                    l = {n, i+1}
                 end
             elseif s({v[2],v[3],v[4],v[5]}) then
-                l = {n, i}
+                l = {n, i+1}
             end
         end
     end
