@@ -1,4 +1,4 @@
-repeat wait() until game:IsLoaded() end
+repeat wait() until game:IsLoaded()
 
 local services = {}
 
