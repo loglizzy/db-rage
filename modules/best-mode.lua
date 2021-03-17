@@ -1,6 +1,11 @@
-local k = require(game.ReplicatedStorage["_replicationFolder"].SkillRequirements).Modes
-local c = game.Players.LocalPlayer.Stats
-local d = require(game.ReplicatedStorage["_replicationFolder"].ModeMultipliers)
+local Players = game:GetService('Players')
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local player = Players.LocalPlayer
+
+local k = require(ReplicatedStorage["_replicationFolder"].SkillRequirements).Modes
+local c = Players.LocalPlayer.Stats
+local d = require(ReplicatedStorage["_replicationFolder"].ModeMultipliers)
 
 local function s(t)
     local o = 0
